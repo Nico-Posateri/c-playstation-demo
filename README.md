@@ -19,6 +19,7 @@ This is why, as you might have seen from the table of contents, this readme serv
 
 ## PlayStation 1 Hardware Overview
 The PlayStation 1 model SCPH-1000 was released in Japan on December 3, 1994. This was the first commercial unit, featuring an S-video port, parallel I/O ports, and RCA connectors, all of which would be removed in subsequent revisions.
+![Sony-PlayStation-SCPH-1000-Motherboard-Top](https://github.com/user-attachments/assets/8cb815a8-15d8-4397-beae-d0bf6497feb8)
 
 ## Project Resources
 The following section contains an overview of the languages, emulators, and libraries used to complete this project.

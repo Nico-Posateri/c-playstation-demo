@@ -6,7 +6,10 @@ A demo for the original PlayStation, created using C and MIPS assembly alongside
 # Table of Contents
 1. [Project Overview](##-project-overview)
 2. [Hardware Overview](##-playstation-1-hardware-overview)
-3. [Project Resources](##-project-resources)
+   - [CPU](###-more-on-the-cpu)
+   - [Memory](###-more-on-memory-and-endianness)
+   - [Memory Map](###-on-the-cpu-memory-map)
+4. [Project Resources](##-project-resources)
    - [MIPS Assembly](###-mips-assembly---instructions-and-syntax)
    - [PsyQ SDK](###-psyq-sdk)
    - [Emulation](###-emulation)
@@ -43,9 +46,17 @@ The PlayStation 1 model SCPH-1000 was released in Japan on December 3, 1994. Thi
 ### More on the CPU
 The 1990s saw a rise in the commonality of RISC (Reduced Instruction Set Computer) over CISC (Complex Instruction Set Computer) processing. The PS1 features a RISC processor. RISC philosophy aims to execute simple instructions that can be completed in a single clock cycle.
 
-The PlayStation's MIPS (Microprocessor without Interlocked Pipelined Stages) CPU was an R3000A processor from MIPS and LSI Logic. MIPS created the instruction set for the MIPS RISC architecture. LSI Logic was a chip manufacturer which could produce custom chips for businesses. Sony commissioned the manufacturing of the LSI CW33300 from LSI Logic, which was binary-compatible with the MIPS R3000A. This means it used the same instruction set as well.
+The PlayStation's MIPS (Microprocessor without Interlocked Pipelined Stages) CPU was a unique R3000A processor from MIPS and LSI Logic. MIPS created the instruction set for the MIPS RISC architecture. They then licensed out the IP so that manufacturers could produce custom MIPS chips. LSI Logic was one such chip manufacturer, which would produce custom chips for businesses like Sony, who commissioned the manufacturing of the LSI CW33300 from LSI Logic. This chip was binary-compatible with the MIPS R3000A.
 
-CP1, the FPU (Floating Point Unit), was a coprocessor typically dedicated to handling floating point numbers. The lack of this coprocessing unit in the PS1 results in the snapping of vertices and affine texture mapping, producing the "warbling" of geometry which has become synonymous with the PS1.
+CP1, the FPU (Floating Point Unit), was a coprocessor typically dedicated to handling floating point numbers. The lack of this coprocessing unit in the PS1 results in snapping vertices and affine texture mapping, producing the "warbling" of geometry which has become synonymous with the PS1. The version of the MIPS R3000A that made its way into Sony's first home console was a lower-end processor, which made it more affordable and a practical choice for their first foray into gaming hardware.
+
+### More on Memory and Endianness
+MIPS memory consists of 32-bit memory addresses, 2^32 addressable bytes. The PlayStation does not use an MMU (Memory Management Unit), so it has no virtual memory. It's entirely physical.
+
+The PlayStation is *little endian*. If we wanted to store the hexadecimal value 0x12345678 in memory, the bytes would be populated, from left to right: [7 8][5 6][3 4][1 2]. In a *big endian* machine, it would be populate, left to right: [1 2][3 4][5 6][7 8]. MIPS CPUs typically allow a choice between little and big endianness, but the PlayStation is hardwired this way.
+
+### On the CPU Memory Map
+WIP.
 
 ## Project Resources
 The following section contains an overview of the languages, emulators, and libraries used to complete this project.

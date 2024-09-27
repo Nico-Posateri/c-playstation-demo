@@ -19,7 +19,33 @@ This is why, as you might have seen from the table of contents, this readme serv
 
 ## PlayStation 1 Hardware Overview
 The PlayStation 1 model SCPH-1000 was released in Japan on December 3, 1994. This was the first commercial unit, featuring an S-video port, parallel I/O ports, and RCA connectors, all of which would be removed in subsequent revisions.
+
 ![Sony-PlayStation-SCPH-1000-Motherboard-Top](https://github.com/user-attachments/assets/8cb815a8-15d8-4397-beae-d0bf6497feb8)
+
+- **CPU**: 32-bit R3000A MIPS, 33.86 MHz (manufactured by LSI)
+  - 32 general-purpose registers
+  - 2 dedicated multiplication and division registers
+  - 32-bit data bus
+  - 32-bit address bus
+  - 1 ALU (Arithmetic Logic Unit for adding, subtracting, and logical operators)
+  - 5-stage pipeline (can parallelize instructions)
+- **Coprocessors**:
+  - **CP0**: System Control
+  - **CP2**: GTE (Geometry Transformation Engine)
+  - **MDEC** (Motion Decoder)
+- **RAM**: 2 MB EDO Memory (4 x 512 KB chips)
+- ***VRAM**: 1 MB (2 x 512 KB chips)
+- **DRAM**: 512 KB (dedicated to sound)
+- **GPU**: SCPH-9000 2D rasterizer
+- **SPU**: Sound Processing Unit, 16-bit 24-channel ADPCM (Adaptive Differential Pulse-Code Modulation)
+- **CD Subsystem**: Motor and laser control
+
+### More on the CPU
+The 1990s saw a rise in the commonality of RISC (Reduced Instruction Set Computer) over CISC (Complex Instruction Set Computer) processing. The PS1 features a RISC processor. RISC philosophy aims to execute simple instructions that can be completed in a single clock cycle.
+
+The PlayStation's MIPS (Microprocessor without Interlocked Pipelined Stages) CPU was an R3000A processor from MIPS and LSI Logic. MIPS created the instruction set for the MIPS RISC architecture. LSI Logic was a chip manufacturer which could produce custom chips for businesses. Sony commissioned the manufacturing of the LSI CW33300 from LSI Logic, which was binary-compatibel with the MIPS R3000A. This means it used the same instruction set as well.
+
+CP1, the FPU (Floating Point Unit), was a coprocessor typically dedicated to handling floating point numbers. The lack of this coprocessing unit in the PS1 results in the snapping of vertices and affine texture mapping, producing the "warbling" of geometry which has become synonymous with the PS1.
 
 ## Project Resources
 The following section contains an overview of the languages, emulators, and libraries used to complete this project.
@@ -31,3 +57,6 @@ The following section contains an overview of the languages, emulators, and libr
 
 ## Additional Information
 [PS1 Programming with MIPS Assembly and C course](https://pikuma.com/courses/ps1-programming-mips-assembly-language) taught by [Gustavo Pezzi](https://github.com/gustavopezzi).
+
+https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/
+https://www.copetti.org/writings/consoles/playstation/

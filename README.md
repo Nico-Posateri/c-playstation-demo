@@ -34,7 +34,7 @@ The PlayStation 1 model SCPH-1000 was released in Japan on December 3, 1994. Thi
   - **CP2**: GTE (Geometry Transformation Engine)
   - **MDEC** (Motion Decoder)
 - **RAM**: 2 MB EDO Memory (4 x 512 KB chips)
-- ***VRAM**: 1 MB (2 x 512 KB chips)
+- **VRAM**: 1 MB (2 x 512 KB chips)
 - **DRAM**: 512 KB (dedicated to sound)
 - **GPU**: SCPH-9000 2D rasterizer
 - **SPU**: Sound Processing Unit, 16-bit 24-channel ADPCM (Adaptive Differential Pulse-Code Modulation)

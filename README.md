@@ -43,7 +43,7 @@ The PlayStation 1 model SCPH-1000 was released in Japan on December 3, 1994. Thi
 ### More on the CPU
 The 1990s saw a rise in the commonality of RISC (Reduced Instruction Set Computer) over CISC (Complex Instruction Set Computer) processing. The PS1 features a RISC processor. RISC philosophy aims to execute simple instructions that can be completed in a single clock cycle.
 
-The PlayStation's MIPS (Microprocessor without Interlocked Pipelined Stages) CPU was an R3000A processor from MIPS and LSI Logic. MIPS created the instruction set for the MIPS RISC architecture. LSI Logic was a chip manufacturer which could produce custom chips for businesses. Sony commissioned the manufacturing of the LSI CW33300 from LSI Logic, which was binary-compatibel with the MIPS R3000A. This means it used the same instruction set as well.
+The PlayStation's MIPS (Microprocessor without Interlocked Pipelined Stages) CPU was an R3000A processor from MIPS and LSI Logic. MIPS created the instruction set for the MIPS RISC architecture. LSI Logic was a chip manufacturer which could produce custom chips for businesses. Sony commissioned the manufacturing of the LSI CW33300 from LSI Logic, which was binary-compatible with the MIPS R3000A. This means it used the same instruction set as well.
 
 CP1, the FPU (Floating Point Unit), was a coprocessor typically dedicated to handling floating point numbers. The lack of this coprocessing unit in the PS1 results in the snapping of vertices and affine texture mapping, producing the "warbling" of geometry which has become synonymous with the PS1.
 

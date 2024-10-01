@@ -4,15 +4,15 @@ A demo for the original PlayStation, created using C and MIPS assembly alongside
 ![tv-psygnosis-transparent](https://github.com/user-attachments/assets/f6f99b48-7f5e-472f-859b-5e51af403cf0)
 
 # Table of Contents
-1. [Project Overview](##project-overview)
-2. [Hardware Overview](##playstation-1-hardware-overview)
-   - [CPU](###more-on-the-cpu)
-   - [Memory](###more-on-memory-and-endianness)
-   - [Memory Map](###on-the-cpu-memory-map)
-4. [Project Resources](##project-resources)
-   - [MIPS Assembly](###mips-assembly---instructions-and-syntax)
-   - [PsyQ SDK](###psyq-sdk)
-   - [Emulation](###emulation)
+1. [Project Overview](#project-overview)
+2. [Hardware Overview](#playstation-1-hardware-overview)
+   - [CPU](#more-on-the-cpu)
+   - [Memory](#more-on-memory-and-endianness)
+   - [Memory Map](#on-the-cpu-memory-map)
+4. [Project Resources](#project-resources)
+   - [MIPS Assembly](#mips-assembly---instructions-and-syntax)
+   - [PsyQ SDK](#psyq-sdk)
+   - [Emulation](#emulation)
 5. [Additional Information](#additional-information)
 
 ## Project Overview

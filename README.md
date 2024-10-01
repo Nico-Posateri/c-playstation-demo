@@ -51,7 +51,7 @@ The PlayStation's MIPS (Microprocessor without Interlocked Pipelined Stages) CPU
 CP1, the FPU (Floating Point Unit), was a coprocessor typically dedicated to handling floating point numbers. The lack of this coprocessing unit in the PS1 results in snapping vertices and affine texture mapping, producing the "warbling" of geometry which has become synonymous with the PS1. The version of the MIPS R3000A that made its way into Sony's first home console was a lower-end processor, which made it more affordable and a practical choice for their first foray into gaming hardware.
 
 ### More on Memory and Endianness
-MIPS memory consists of 32-bit memory addresses, 2^32 addressable bytes. The PlayStation does not use an MMU (Memory Management Unit), so it has no virtual memory. It's entirely physical.
+MIPS memory consists of 32-bit memory addresses, 2<sup>32</sup> addressable bytes. The PlayStation does not use an MMU (Memory Management Unit), so it has no virtual memory. It's entirely physical.
 
 The PlayStation is *little endian*. If we wanted to store the hexadecimal value 0x12345678 in memory, the bytes would be populated, from left to right: [7 8][5 6][3 4][1 2]. In a *big endian* machine, it would populate, left to right: [1 2][3 4][5 6][7 8]. MIPS CPUs typically allow a choice between little and big endianness, but the PlayStation is hardwired this way.
 

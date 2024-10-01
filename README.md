@@ -13,7 +13,7 @@ A demo for the original PlayStation, created using C and MIPS assembly alongside
    - [MIPS Assembly](###mips-assembly---instructions-and-syntax)
    - [PsyQ SDK](###psyq-sdk)
    - [Emulation](###emulation)
-5. [Additional Information](##additional-information)
+5. [Additional Information](#additional-information)
 
 ## Project Overview
 Before I began this project, I simply wanted to learn to develop a demo using the original PS1 SDK and the C language. Shortly after starting it, however, I thought this would be more fun if I embraced it as a broader learning experience.

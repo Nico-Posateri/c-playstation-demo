@@ -60,10 +60,33 @@ The following section is a breakdown of the PS1's CPU memory map.
 
 ![ps1-cpu-memory-map](https://github.com/user-attachments/assets/a929df05-9dd3-455b-86f9-7680de79e85b)
 
+It's worth briefly noting that, in standard MIPS processors, the KUSEG would contain 2GB of virtual memory. Since the PlayStation doesn't support this, its first 512MB instead serve as a mirror of KSEG0 and KSEG1.
+
+Some examples of I/O ports at addresses starting with 0x1F80:
+
+- GPU (video) Registers:
+  - 0x1F801810 write = GP0, where packets of information are sent, such as triangles to draw, color information, shading information, etc.
+  - 0x1F801814 write = GP1, where packets of information are sent to configure display control, such as bit depth, resolution, NTSC/PAL, etc.
+  - 0x1F801810 read = Read responses to GP0 and GP1 commands.
+  - 0x1F801814 read = Read GPU status register.
+
+- SPU (sound) Control Registers:
+  - 0x1F801D80 = Main volume control, left and right.
+  - 0x1F801D84 = Reverb output volume control, left and right.
+  - 0x1F801D88 = Voice 0..23 Key ON (Start Attack, Decay, or Sustain).
+  - 0x1F801D8C = Voice 0..23 Key OFF (Start release).
+
+- MDEC (motion) Registers:
+  - 0x1F801820 write = MDEC Command and Parameter Register
+  - 0x1F801824 write = MDEC Control and Reset Register
+  - 0x1F801820 read = MDEC Data and Response Register
+  - 0x1F801824 read = MDEC Status Register
+
 ## Project Resources
 The following section contains an overview of the languages, emulators, and libraries used to complete this project.
-<!-- COMMENTED OUT UNTIL FINISHED . . .
+
 ### MIPS Assembly - Instructions and Syntax
+<!-- COMMENTED OUT UNTIL FINISHED . . .
 ### PsyQ SDK
 ![psyq](https://github.com/Nico-Posateri/c-playstation-demo/assets/141705409/be5f2348-d887-42e2-ba3e-0b204459d29e)
 ### Emulation

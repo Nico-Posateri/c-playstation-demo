@@ -8,7 +8,6 @@ A demo for the original PlayStation, created using C and MIPS assembly alongside
 2. [Hardware Overview](#playstation-1-hardware-overview)
    - [CPU](#more-on-the-cpu)
    - [Memory](#more-on-memory-and-endianness)
-   - [Memory Map](#on-the-cpu-memory-map)
    - [GPU](#more-on-the-gpu)
 4. [Project Resources](#project-resources)
    - [MIPS Assembly](#mips-assembly---instructions-and-syntax)

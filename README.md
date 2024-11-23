@@ -87,7 +87,13 @@ Some examples of I/O ports at addresses starting with 0x1F80:
 Did you know that the PlayStation's GPU is a 2D rasterizer? Yes, it is only capable of drawing 2D objects. In this section, we will elaborate on the PlayStation's iconic visual quirks, as referenced briefly in the section [*More on the CPU*](#more-on-the-cpu).
 
 #### Types of Primitives
-First, there are a few primitives that the PlayStation is capable of drawing; **Flat-Shaded Polygons**, a triangle or quad painted with a single color; **Gouraud-Shaded Polygons**, where tris or quads are painted with different colors per vertex then interpolated per pixel to create the facade of a smooth-shaded model without needing textures; **Textured Polygons**, where a texture image is loaded into VRAM before being applied to a polygon using UV coordinates; **Lines**, which are simply lines drawn between two screen coordinates; and finally, **Sprites**, which are essentially texture images with scale and location coordinates, akin to the demons of *Doom*.
+First, there are a few primitives that the PlayStation is capable of drawing:
+
+1. **Flat-Shaded Polygons** - A triangle or quad painted with a single color.
+2. **Gouraud-Shaded Polygons** - Where tris or quads are painted with different colors per vertex then interpolated per pixel to create the facade of a smooth-shaded model without needing textures.
+3. **Textured Polygons** - Where a texture image is loaded into VRAM before being applied to a polygon using UV coordinates.
+4. **Lines** - Lines drawn between two screen coordinates.
+5. **Sprites** - Essentially texture images with scale and location coordinates, akin to the demons of *Doom*.
 
 <!-- INSERT EXAMPLE IMAGE OF PS1 PRIMITIVES -->
 #### Drawing Primitives

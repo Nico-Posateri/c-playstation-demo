@@ -87,17 +87,13 @@ Some examples of I/O ports at addresses starting with 0x1F80:
 Did you know that the PlayStation's GPU is a 2D rasterizer? Yes, it is only capable of drawing 2D objects. In this section, we will elaborate on the PlayStation's iconic visual quirks, as referenced briefly in the section [*More on the CPU*](#more-on-the-cpu).
 
 ### Types of Primitives
-
 First, there are a few primitives that the PlayStation is capable of drawing; **Flat-Shaded Polygons**, a triangle or quad painted with a single color; **Gouraud-Shaded Polygons**, where tris or quads are painted with different colors per vertex then interpolated per pixel to create the facade of a smooth-shaded model without needing textures; **Textured Polygons**, where a texture image is loaded into VRAM before being applied to a polygon using UV coordinates; **Lines**, which are simply lines drawn between two screen coordinates; and finally, **Sprites**, which are essentially texture images with scale and location coordinates, akin to the demons of *Doom*.
 
 <!-- INSERT EXAMPLE IMAGE OF PS1 PRIMITIVES -->
 ### Drawing Primitives
-
 As you can see in the [CPU Memory Map diagram](#on-the-cpu-memory-map), the PlayStation's VRAM is not memory mapped. Primitives must be drawn to the frame buffer by asking the GPU to do so. We can write to GP0, as referenced in the same section, telling it which type of primitive we want it to draw, along with the necessary parameters (vertices locations and color). This information is quickly sent, via direct memory access, to the GPU in a sequence of packets containing 32-bit values.
 
-At this stage of the rasterization process, all polygon coordinates being loaded and stored in the memory mapped GPU I/O port are in 2D. This lack of access to the z-axis at the rasterization stage will play into one of the PlayStation's more prominent visual artifacts which will be covered in the section below.
-
-### Types of Visual Artifacts
+At this stage of the rasterization process, all polygon coordinates being loaded and stored in the memory mapped GPU I/O port are in 2D. This lack of access to the z-axis at the rasterization stage will play into one of the PlayStation's more prominent visual artifacts, which will be covered in the section below along with other artifacts synonymous with Sony's first home console.
 
 ### Texture Wobble
 

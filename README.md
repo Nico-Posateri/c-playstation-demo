@@ -54,13 +54,15 @@ CP1, the FPU (Floating Point Unit), was a coprocessor typically dedicated to han
 MIPS memory consists of 32-bit memory addresses, 2<sup>32</sup> addressable bytes. The PlayStation does not use an MMU (Memory Management Unit), so it has no virtual memory. It's entirely physical.
 
 The PlayStation is *little endian*. If we wanted to store the hexadecimal value 0x12345678 in memory, the bytes would be populated, from left to right: [7 8][5 6][3 4][1 2]. In a *big endian* machine, it would populate, left to right: [1 2][3 4][5 6][7 8]. MIPS CPUs typically allow a choice between little and big endianness, but the PlayStation is hardwired this way.
-<!-- COMMENTED OUT UNTIL FINISHED . . .
+
 ### On the CPU Memory Map
-WIP.
+The following section is a breakdown of the PS1's CPU memory map.
+
+![ps1-cpu-memory-map](https://github.com/user-attachments/assets/a929df05-9dd3-455b-86f9-7680de79e85b)
 
 ## Project Resources
 The following section contains an overview of the languages, emulators, and libraries used to complete this project.
-
+<!-- COMMENTED OUT UNTIL FINISHED . . .
 ### MIPS Assembly - Instructions and Syntax
 ### PsyQ SDK
 ![psyq](https://github.com/Nico-Posateri/c-playstation-demo/assets/141705409/be5f2348-d887-42e2-ba3e-0b204459d29e)

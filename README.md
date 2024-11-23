@@ -9,6 +9,7 @@ A demo for the original PlayStation, created using C and MIPS assembly alongside
    - [CPU](#more-on-the-cpu)
    - [Memory](#more-on-memory-and-endianness)
    - [Memory Map](#on-the-cpu-memory-map)
+   - [GPU](#more-on-the-gpu)
 4. [Project Resources](#project-resources)
    - [MIPS Assembly](#mips-assembly---instructions-and-syntax)
    - [PsyQ SDK](#psyq-sdk)
@@ -89,9 +90,8 @@ First, there are a few primitives that the PlayStation is capable of drawing; **
 
 ## Project Resources
 The following section contains an overview of the languages, emulators, and libraries used to complete this project.
-
-### MIPS Assembly - Instructions and Syntax
 <!-- COMMENTED OUT UNTIL FINISHED . . .
+### MIPS Assembly - Instructions and Syntax
 ### PsyQ SDK
 ![psyq](https://github.com/Nico-Posateri/c-playstation-demo/assets/141705409/be5f2348-d887-42e2-ba3e-0b204459d29e)
 ### Emulation

@@ -84,9 +84,16 @@ Some examples of I/O ports at addresses starting with 0x1F80:
   - 0x1F801824 read = MDEC Status Register
 
 ### More on the GPU
-Did you know that the PlayStation's GPU is a 2D rasterizer? Yes, it is only capable of drawing 2D objects. In this section, we will elaborate on the PlayStation's iconic visual quirks, as referenced briefly in the section *More on the CPU*.
+Did you know that the PlayStation's GPU is a 2D rasterizer? Yes, it is only capable of drawing 2D objects. In this section, we will elaborate on the PlayStation's iconic visual quirks, as referenced briefly in the section [*More on the CPU*](#more-on-the-cpu).
 
+**Types of Primitives**
 First, there are a few primitives that the PlayStation is capable of drawing; **Flat-Shaded Polygons**, a triangle or quad painted with a single color; **Gouraud-Shaded Polygons**, where tris or quads are painted with different colors per vertex then interpolated per pixel to create the facade of a smooth-shaded model without needing textures; **Textured Polygons**, where a texture image is loaded into VRAM before being applied to a polygon using UV coordinates; **Lines**, which are simply lines drawn between two screen coordinates; and finally, **Sprites**, which are essentially texture images with scale and location coordinates, akin to the demons of *Doom*.
+
+<!-- INSERT EXAMPLE IMAGE OF PS1 PRIMITIVES -->
+**Drawing Primitives**
+As you can see in the [CPU Memory Map diagram](#ps1-cpu-memory-map), the PlayStation's VRAM is not memory mapped. Primitives must be drawn to the frame buffer by asking the GPU to do so. We also mentioned in the CPU Memory 
+
+**Types of Visual Artifacts**
 
 ## Project Resources
 The following section contains an overview of the languages, emulators, and libraries used to complete this project.

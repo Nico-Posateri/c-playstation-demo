@@ -129,6 +129,6 @@ The following section contains an overview of the languages, emulators, and libr
 -->
 
 ## Additional Information
-Plenty of technical information on the PlayStation's hardware featured in this document was gleaned from varied sources, but a bulk of it comes from Gustavo Pezzi's [PS1 Programming with MIPS Assembly and C course](https://pikuma.com/courses/ps1-programming-mips-assembly-language), as well as *PlayStation Architecture: A Promising Newcomer*, a practical analysis of the PlayStation written by Rodrigo Copetti.
+Plenty of technical information on the PlayStation's hardware featured in this document was gleaned from varied sources, but a bulk of it comes from Gustavo Pezzi's [PS1 Programming with MIPS Assembly and C course](https://pikuma.com/courses/ps1-programming-mips-assembly-language), as well as [*PlayStation Architecture: A Promising Newcomer*](https://payhip.com/b/h9Cpi), a practical analysis of the PlayStation written by Rodrigo Copetti.
 
 Moreover, this [rough breakdown on CISC and RISC architecture published by Stanford students](https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/) in 2000 was an interesting read.

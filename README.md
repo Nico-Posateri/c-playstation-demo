@@ -121,9 +121,8 @@ The following section contains an overview of the languages, emulators, and libr
 ![psyq](https://github.com/Nico-Posateri/c-playstation-demo/assets/141705409/be5f2348-d887-42e2-ba3e-0b204459d29e)
 ### Emulation
 -->
+
 ## Additional Information
-[PS1 Programming with MIPS Assembly and C course](https://pikuma.com/courses/ps1-programming-mips-assembly-language) taught by [Gustavo Pezzi](https://github.com/gustavopezzi).
-<!-- COMMENTED OUT UNTIL FINISHED . . .
-https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/
-https://www.copetti.org/writings/consoles/playstation/
--->
+Plenty of technical information on the PlayStation's hardware featured in this document was gleaned from varied sources, but a bulk of it comes from Gustavo Pezzi's [PS1 Programming with MIPS Assembly and C course](https://pikuma.com/courses/ps1-programming-mips-assembly-language), as well as *PlayStation Architecture: A Promising Newcomer*, a practical analysis of the PlayStation written by Rodrigo Copetti.
+
+Moreover, this [rough breakdown on CISC and RISC architecture published by Stanford students](https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/) in 2000 was an interesting read.

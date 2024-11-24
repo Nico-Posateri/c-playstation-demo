@@ -24,6 +24,7 @@ This is why, as you might have seen from the table of contents, this readme serv
 The PlayStation 1 model SCPH-1000 was released in Japan on December 3, 1994. This was the first commercial unit, featuring an S-video port, parallel I/O ports, and RCA connectors, all of which would be removed in subsequent revisions.
 
 ![Sony-PlayStation-SCPH-1000-Motherboard-Top](https://github.com/user-attachments/assets/8cb815a8-15d8-4397-beae-d0bf6497feb8)
+<sup>A simple overview of key components on the PS1's motherboard.</sup>
 
 - **CPU**: 32-bit R3000A MIPS, 33.86 MHz (manufactured by LSI)
   - 32 general-purpose registers
@@ -59,6 +60,7 @@ The PlayStation is *little endian*. If we wanted to store the hexadecimal value 
 The following section is a breakdown of the PS1's CPU memory map.
 
 ![ps1-cpu-memory-map](https://github.com/user-attachments/assets/a929df05-9dd3-455b-86f9-7680de79e85b)
+<sup>A map of the PS1's CPU memory addresses.</sup>
 
 It's worth briefly noting that, in standard MIPS processors, the KUSEG would contain 2GB of virtual memory. Since the PlayStation doesn't support this, its first 512MB instead serve as a mirror of KSEG0 and KSEG1.
 
@@ -89,6 +91,7 @@ Did you know that the PlayStation's GPU is a 2D rasterizer? Yes, it is only capa
 First, there are a few primitives that the PlayStation is capable of drawing:
 
 ![primitives-in-action](https://github.com/user-attachments/assets/7bd9b31f-1cfc-4711-a774-b4ac3b7c02ea)
+<sup>An example of a sprite (Gex from *Gex*), gouraud shading (Chocobo from *FFVII*), and textured polygons (Harry Mason from *Silent Hill*).</sup>
 
 1. **Flat-Shaded Polygons** - A triangle or quad painted with a single color.
 2. **Gouraud-Shaded Polygons** - Where tris or quads are painted with different colors per vertex then interpolated per pixel to create the facade of a smooth-shaded model without needing textures.

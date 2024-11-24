@@ -100,11 +100,10 @@ First, there are a few primitives that the PlayStation is capable of drawing:
 5. **Sprites** - Essentially texture images with scale and location coordinates, akin to the demons of *Doom*.
 
 #### Drawing Primitives
-As you can see in the [CPU Memory Map diagram](#on-the-cpu-memory-map), the PlayStation's VRAM is not memory mapped. Primitives must be drawn to the frame buffer by asking the GPU to do so. We can write to GP0, as referenced in the same section, telling it which type of primitive we want it to draw, along with the necessary parameters (vertices locations and color). This information is quickly sent, via direct memory access, to the GPU in a sequence of packets containing 32-bit values.
+As you can see in the [CPU Memory Map diagram](#on-the-cpu-memory-map), the PlayStation's VRAM is not memory mapped. Primitives must be drawn to the frame buffer by asking the GPU to do so. We can write to GP0, as referenced in the same section, telling it which type of primitive we want it to draw, along with the necessary parameters (vertex locations and color). This information is quickly sent, via direct memory access, to the GPU in a sequence of packets containing 32-bit values.
 
 At this stage of the rasterization process, all polygon coordinates being loaded and stored in the memory mapped GPU I/O port are in 2D. This lack of access to the z-axis at the rasterization stage will play into one of the PlayStation's more prominent visual artifacts, which will be covered below alongside other artifacts synonymous with Sony's first home console.
 
-<!-- COMMENTED OUT UNTIL FINISHED . . .
 #### Texture Wobble
 
 #### Polygon Pop
@@ -117,6 +116,7 @@ At this stage of the rasterization process, all polygon coordinates being loaded
 The following section contains an overview of the languages, emulators, and libraries used to complete this project.
 
 ### MIPS Assembly - Instructions and Syntax
+<!-- COMMENTED OUT UNTIL FINISHED . . .
 ### PsyQ SDK
 ![psyq](https://github.com/Nico-Posateri/c-playstation-demo/assets/141705409/be5f2348-d887-42e2-ba3e-0b204459d29e)
 ### Emulation

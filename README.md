@@ -88,13 +88,14 @@ Did you know that the PlayStation's GPU is a 2D rasterizer? Yes, it is only capa
 #### Types of Primitives
 First, there are a few primitives that the PlayStation is capable of drawing:
 
+![primitives-in-action](https://github.com/user-attachments/assets/7bd9b31f-1cfc-4711-a774-b4ac3b7c02ea)
+
 1. **Flat-Shaded Polygons** - A triangle or quad painted with a single color.
 2. **Gouraud-Shaded Polygons** - Where tris or quads are painted with different colors per vertex then interpolated per pixel to create the facade of a smooth-shaded model without needing textures.
 3. **Textured Polygons** - Where a texture image is loaded into VRAM before being applied to a polygon using UV coordinates.
 4. **Lines** - Lines drawn between two screen coordinates.
 5. **Sprites** - Essentially texture images with scale and location coordinates, akin to the demons of *Doom*.
 
-<!-- INSERT EXAMPLE IMAGE OF PS1 PRIMITIVES -->
 #### Drawing Primitives
 As you can see in the [CPU Memory Map diagram](#on-the-cpu-memory-map), the PlayStation's VRAM is not memory mapped. Primitives must be drawn to the frame buffer by asking the GPU to do so. We can write to GP0, as referenced in the same section, telling it which type of primitive we want it to draw, along with the necessary parameters (vertices locations and color). This information is quickly sent, via direct memory access, to the GPU in a sequence of packets containing 32-bit values.
 

@@ -106,6 +106,12 @@ At this stage of the rasterization process, all polygon coordinates being loaded
 
 #### Texture Wobble
 
+![texture-mapping](https://github.com/user-attachments/assets/1a194c29-da77-48a4-a26c-ff45766728c6)
+<sup>Going from an untextured mesh to a textured mesh using inverse texture mapping.</sup>
+
+![affine-perspective](https://github.com/user-attachments/assets/e301568f-a8b2-4010-af3a-d2375bb9791d)
+<sup>This is a side-by-side comparison of affine texture mapping and perspective correct texture mapping, respectively, as visualized by my [simple rasterization software](https://github.com/Nico-Posateri/c-software-rasterizer).</sup>
+
 #### Polygon Pop
 
 #### Polygon Jitter
